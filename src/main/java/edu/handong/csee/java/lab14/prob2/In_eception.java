@@ -1,10 +1,9 @@
-package edu.handong.csee.java.lab14.prob2;
-import java.util.*;
+package edu.handong.csee.java.lab14.prob2;	//package name
+import java.util.*;	//imports all elements java.util
 
-public class In_eception {
-	private int x,y;
-	public void error_det() {
-
+public class In_eception {	//define the class named In_eception
+	private int x,y;	//declare two integer variables x, y
+	public void detectError() {	//define the class that detects error
 	    try{
 	    	Scanner keyboard = new Scanner(System.in);
 	    	System.out.print("x: ");
