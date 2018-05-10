@@ -1,22 +1,22 @@
-package edu.handong.csee.java.lab14.prob3;
-import java.util.Scanner;
+package edu.handong.csee.java.lab14.prob3;	//package name
+import java.util.Scanner;	//import  Scanner
 
-public class Main {
+public class Main {	//define the class that contains the main method
 
-	public static void main(String[] args) {
-		Scanner keyboard = new Scanner(System.in);
+	public static void main(String[] args) {	//define the main method
+		Scanner keyboard = new Scanner(System.in);	//instantiate the Scanner to keyboard
 
-		System.out.println("Innput two integers");
+		System.out.println("Innput two integers");	//print out this message to get the integers from user
 		
-		while (keyboard.hasNextInt()) {
-            int n = keyboard.nextInt();
-            int p = keyboard.nextInt();
-    		Powercalc calculator = new Powercalc(n,p);
+		while (keyboard.hasNextInt()) {	//while user inputed value is valid value
+            int n = keyboard.nextInt();	//get n from user
+            int p = keyboard.nextInt();	//get p from user
+    		Powercalc calculator = new Powercalc(n,p);	//instantiate Powercalc to Calculator with two integers n and p
            
-    		try {
-                System.out.println(calculator.calculatePower());
-            } catch (Exception e) {
-                System.out.println(e);
+    		try {	//try following lines in the block
+                System.out.println(calculator.calculatePower());	//print out the result 
+            } catch (Exception e) {	//if an exception was caught in the try block
+                System.out.println(e.getMessage());	//print out the exception
             }
         }
 
